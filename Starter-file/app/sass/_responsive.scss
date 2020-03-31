@@ -1,0 +1,23 @@
+@media only screen and (max-width: 987px) {
+    .pensez {
+        display: flex;
+        flex-direction:column-reverse;
+        &__infor
+        {
+            button
+            {
+                width: 100%;
+                
+            }
+        }
+    }
+    
+    &__image
+    {
+        img
+        {
+            width: 50%;
+            height: auto;
+        }
+    }
+}
