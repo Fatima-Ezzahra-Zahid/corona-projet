@@ -22,9 +22,7 @@
     background-color:$color_yellow ;
     &__titre
     {
-        text-align: center;
-        font-weight: bold;
-        color:$color_titre;
+        @include titre;
         font-size: 25px;
         padding-bottom: 1%;
     }
@@ -67,22 +65,11 @@
         }
         button
         {
-            background-image: url(../image/bar-17.png);
-            background-position: center;
-            padding: 2%;
-            margin-top: 3%;
+            @include button;
             width: 650px;
-            border: 2px solid $color_titre;
-            border-radius: 12px;
-            color: $color_titre;
-            font-size: 20px;
-            font-weight: bold;
+            
         }
-        button:hover
-        {
-            background-color:$color_titre;
-            color: $color_white;
-        }
+        
     }
     &__image
     {
