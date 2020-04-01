@@ -1,0 +1,57 @@
+.content2
+{
+    background-color: $color_back;
+    padding: 3%;
+    h3
+    {
+        color:$color_white;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    .sous_titre
+    {
+        color:$color_white;
+        font-weight: bold;
+        padding-left: 20%;
+        font-size: 20px;
+    }
+    .recon
+    {
+        display: flex;
+        padding-left: 29px;
+        &__inter
+        {
+            p
+            {
+                color:$color_white ;
+                font-size: 20px;
+            }
+        }
+        &__btns
+        {
+            p
+            {
+                color: $color_yellow;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+            button
+            {
+                display: block;
+                padding: 2%;
+                width:200px;
+                margin-bottom: 12%;
+                margin-left: 20px;
+                border-radius: 5px;
+                background-color: $color_yellow;
+                border: none;
+                color:$color_back;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            
+        }
+    }
+}

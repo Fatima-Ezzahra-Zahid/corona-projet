@@ -1,23 +1,70 @@
 @media only screen and (max-width: 987px) {
     .pensez {
         display: flex;
-        flex-direction:column-reverse;
-        &__infor
-        {
-            button
-            {
+        flex-direction: column-reverse;
+
+        &__infor {
+            button {
                 width: 100%;
-                
+
             }
         }
     }
-    
-    &__image
-    {
-        img
-        {
+
+    &__image {
+        img {
             width: 50%;
             height: auto;
         }
     }
+}
+
+
+@media only screen and (max-width: 987px) {
+    .content2 {
+        h3 {
+           font-size: 25px;
+        }
+
+        .sous_titre
+        {
+            font-size: 15px;
+            padding-left: 10%;
+        }
+        .recon {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+
+            &__inter {
+                p {
+                    color: $color_white;
+                    font-size: 15px;
+                }
+            }
+
+            &__btns {
+
+                button {
+                    display: block;
+                    padding: 2%;
+                    width: 200px;
+                    margin-bottom: 12%;
+                    margin-left: 113px;
+                    border-radius: 5px;
+                    background-color: $color_yellow;
+                    border: none;
+                    color: $color_back;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+            }
+        }
+
+
+
+
+    }
+
 }
