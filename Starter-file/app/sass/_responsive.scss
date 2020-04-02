@@ -23,14 +23,14 @@
 @media only screen and (max-width: 987px) {
     .content2 {
         h3 {
-           font-size: 25px;
+            font-size: 25px;
         }
 
-        .sous_titre
-        {
+        .sous_titre {
             font-size: 15px;
             padding-left: 10%;
         }
+
         .recon {
             display: flex;
             flex-direction: column;
@@ -47,16 +47,8 @@
 
                 button {
                     display: block;
-                    padding: 2%;
-                    width: 200px;
-                    margin-bottom: 12%;
-                    margin-left: 113px;
-                    border-radius: 5px;
-                    background-color: $color_yellow;
-                    border: none;
-                    color: $color_back;
-                    font-size: 20px;
-                    font-weight: bold;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
 
             }
@@ -65,6 +57,31 @@
 
 
 
+    }
+
+}
+
+@media only screen and (max-width: 987px) {
+    .content3 {
+        button
+        {
+           
+            width: 100%;
+            
+            
+        }
+    }
+
+}
+
+@media only screen and (max-width: 987px) {
+    .footer {
+        hr {
+            
+            width: 100%;
+            
+    
+        }
     }
 
 }
