@@ -23,7 +23,6 @@
         font-weight: bold;
         font-size: 20px;
     }
-
     .acc {
         font-weight: bold;
         font-size: 20px;
@@ -32,12 +31,22 @@
 
     .cons {
         font-size: 20px;
+    
+    }
+    .menu
+    {
+        a
+        {
+            text-decoration: none;
+            color: $color_black;
+        }
     }
 
     .cons:hover {
         color: $color_titre;
     }
-
+    
+    
     hr {
         background-color: $color_titre;
         width: 300px;
