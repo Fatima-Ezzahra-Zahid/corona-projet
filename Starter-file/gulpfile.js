@@ -80,4 +80,4 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./dist/'));
 });
 //Build Prod
-exports.build = series('sass', 'images', 'prefix', 'useref');
+exports.build = series('sass', 'images', 'useref');
