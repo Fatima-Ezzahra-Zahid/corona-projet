@@ -1,16 +1,16 @@
-@import "variable";
-@import "mixin";
-@import "home";
-@import "header";
-@import "content1";
-@import "content2";
-@import "content3";
-@import "footer";
-@import "protege";
-@import "infor";
-@import "responsive";
+@import "./utils/variable";
+@import "./utils/mixin";
+@import "./base/home";
+@import "./layout/header";
+@import "./layout/content1";
+@import "./layout/content2";
+@import "./layout/content3";
+@import "./layout/footer";
+@import "./layout/protege";
+@import "./layout/infor";
+@import "./Themes/responsive";
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./Vendors/scss/bootstrap.scss";
 
 
 
