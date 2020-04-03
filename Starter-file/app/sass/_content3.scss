@@ -1,0 +1,29 @@
+.content3
+{
+    padding: 40px;
+    background-color: $color_ciel;
+   
+    &__test
+    {
+     h4
+    {
+        @include titre;
+        margin-bottom: 20px;
+    }
+    img
+       {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       } 
+    }
+    button
+    {
+        @include button;
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}

@@ -1,0 +1,86 @@
+.navbar {
+    background-image: url(../image/bar-17.png);
+}
+
+
+#logo {
+    color: $color_logo;
+}
+
+.imglogo {
+    
+    width: 30px;
+    
+   
+}
+
+.infos
+{
+    padding: 2%;
+    background-color:$color_yellow ;
+    &__titre
+    {
+        @include titre;
+        font-size: 25px;
+        padding-bottom: 1%;
+    }
+    p
+       {
+           text-align: center;
+           margin-bottom: 0em;
+       }
+
+    
+}
+
+.pensez
+{
+    display: flex;
+    padding: 3%;
+    &__infor
+    {
+        .titre
+        {
+            text-align: center;
+            font-weight: bold;
+            color:$color_titre;
+            font-size: 20px;
+           
+        }
+        img
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .que
+        {
+            text-align: center;
+            margin-bottom: 0em;
+            font-weight: bold;
+            color:$color_texte ;
+            font-size: 20px;
+        }
+        button
+        {
+            @include button;
+            width: 650px;
+            
+        }
+        
+    }
+    &__image
+    {
+        img
+        {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+
+
+
+
