@@ -44,7 +44,7 @@
 
 .protege
 {
-    
+    padding: 4%;
     .para {
         padding-top: 2em;
         padding-bottom: 2em;
@@ -63,11 +63,11 @@
     }
     &__imgs
     {
-        padding-left: 6em;
-        padding-right: 6em;
+        padding-left: 5%;
+        padding-right: 6%;
         img
         {
-            width:6em;
+            width:8em;
         }
        
         
@@ -77,11 +77,72 @@
             display: flex;
             justify-content: center;
             
+            span
+            {
+                text-align: center;
+               padding-left: 5%;
+               padding-right: 5%;
+            }
+            .img1
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img
+                {
+                    margin-top: 3em;
+                }
+                span
+                {
+                    margin-top: 0.5em;
+                }
+            }
+            .img2
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .img3
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
         .imags2
         {
             display: flex;
             justify-content: center;
+            span
+            {
+               padding-left: 5%;
+               padding-right: 5%;
+               text-align: center;
+            }
+
+            .img1
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .img2
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img
+                {
+                    margin-right: 30%;
+                }
+            }
+            .img3
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             
         }
         .imags3
