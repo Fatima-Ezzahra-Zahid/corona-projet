@@ -1,50 +1,36 @@
-// .protege
-// {
-//     padding: 2em;
-//     &__titre
-//     {
-//            color: $color_titre;
-//            font-weight: bold;
-//            text-align: center;
-//            padding-bottom: 60px;
-//            padding-top: 25px;
-//     }
-//     .ico
-//     {
-//         img
-//     {
-//         width: 8em;
-//     }
-//     }
-   
-//     .ico1
-//     {
-//         img
-//         {
-           
-//             margin-top: 3em;
-//         }
-//         .para
-//         {
-//             margin-top: 1em;
-//         }
-//     }
-    
-    
-//     .para {
-//         padding-top: 2em;
-//         padding-bottom: 2em;
-//         color: $color_titre;
-//         font-weight: bold;
-//         font-size: 20px;
-
-//     }
-    
-// }
-
 .protege
 {
-    padding: 4%;
+    padding: 2em;
+    &__titre
+    {
+           color: $color_titre;
+           font-weight: bold;
+           text-align: center;
+           padding-bottom: 60px;
+           padding-top: 25px;
+    }
+    .ico
+    {
+        img
+    {
+        width: 8em;
+    }
+    }
+   
+    .ico1
+    {
+        img
+        {
+           
+            margin-top: 3em;
+        }
+        .para
+        {
+            margin-top: 1em;
+        }
+    }
+    
+    
     .para {
         padding-top: 2em;
         padding-bottom: 2em;
@@ -53,109 +39,123 @@
         font-size: 20px;
 
     }
-        &__titre
-    {
-           color: $color_titre;
-           font-weight: bold;
-           text-align: center;
-           padding-bottom: 60px;
-           padding-top: 25px;
-    }
-    &__imgs
-    {
-        padding-left: 5%;
-        padding-right: 6%;
-        img
-        {
-            width:8em;
-        }
+    
+}
+
+// .protege
+// {
+//     padding: 4%;
+//     .para {
+//         padding-top: 2em;
+//         padding-bottom: 2em;
+//         color: $color_titre;
+//         font-weight: bold;
+//         font-size: 20px;
+
+//     }
+//         &__titre
+//     {
+//            color: $color_titre;
+//            font-weight: bold;
+//            text-align: center;
+//            padding-bottom: 60px;
+//            padding-top: 25px;
+//     }
+//     &__imgs
+//     {
+//         padding-left: 5%;
+//         padding-right: 6%;
+//         img
+//         {
+//             width:8em;
+//         }
        
         
-        .imags1
-        {
+//         .imags1
+//         {
             
-            display: flex;
-            justify-content: center;
+//             display: flex;
+//             justify-content: center;
             
-            span
-            {
-                text-align: center;
-               padding-left: 5%;
-               padding-right: 5%;
-            }
-            .img1
-            {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                img
-                {
-                    margin-top: 3em;
-                }
-                span
-                {
-                    margin-top: 0.5em;
-                }
-            }
-            .img2
-            {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .img3
-            {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-        .imags2
-        {
-            display: flex;
-            justify-content: center;
-            span
-            {
-               padding-left: 5%;
-               padding-right: 5%;
-               text-align: center;
-            }
+//             span
+//             {
+//                 text-align: center;
+//                padding-left: 5%;
+//                padding-right: 5%;
+//             }
+//             .img1
+//             {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 img
+//                 {
+//                     margin-top: 3em;
+//                 }
+//                 span
+//                 {
+//                     margin-top: 0.5em;
+//                 }
+//             }
+//             .img2
+//             {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//             }
+//             .img3
+//             {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//             }
+//         }
+//         .imags2
+//         {
+//             display: flex;
+//             justify-content: center;
+//             span
+//             {
+//                padding-left: 5%;
+//                padding-right: 5%;
+//                text-align: center;
+//             }
 
-            .img1
-            {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .img2
-            {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                img
-                {
-                    margin-right: 30%;
-                }
-            }
-            .img3
-            {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+//             .img1
+//             {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//             }
+//             .img2
+//             {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 img
+//                 {
+//                     margin-right: 30%;
+//                 }
+//             }
+//             .img3
+//             {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//             }
             
-        }
-        .imags3
-        {
-            text-align: center;
-            img
-            {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
+//         }
+//         .imags3
+//         {
+//             text-align: center;
+//             img
+//             {
+//                 display: block;
+//                 margin-left: auto;
+//                 margin-right: auto;
+//             }
             
             
-        }
-    }
-}
+//         }
+//     }
+// }

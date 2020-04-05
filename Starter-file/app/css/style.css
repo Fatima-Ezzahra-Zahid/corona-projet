@@ -114,7 +114,7 @@ body {
       display: block;
       padding: 2%;
       width: 200px;
-      margin-bottom: 12%;
+      margin-bottom: 1em;
       margin-left: 20px;
       border-radius: 5px;
       background-color: #f4cf1b;
@@ -193,74 +193,25 @@ body {
   height: 40px; }
 
 .protege {
-  padding: 4%; }
-  .protege .para {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    color: #1087c7;
-    font-weight: bold;
-    font-size: 20px; }
+  padding: 2em; }
   .protege__titre {
     color: #1087c7;
     font-weight: bold;
     text-align: center;
     padding-bottom: 60px;
     padding-top: 25px; }
-  .protege__imgs {
-    padding-left: 5%;
-    padding-right: 6%; }
-    .protege__imgs img {
-      width: 8em; }
-    .protege__imgs .imags1 {
-      display: flex;
-      justify-content: center; }
-      .protege__imgs .imags1 span {
-        text-align: center;
-        padding-left: 5%;
-        padding-right: 5%; }
-      .protege__imgs .imags1 .img1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .protege__imgs .imags1 .img1 img {
-          margin-top: 3em; }
-        .protege__imgs .imags1 .img1 span {
-          margin-top: 0.5em; }
-      .protege__imgs .imags1 .img2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-      .protege__imgs .imags1 .img3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-    .protege__imgs .imags2 {
-      display: flex;
-      justify-content: center; }
-      .protege__imgs .imags2 span {
-        padding-left: 5%;
-        padding-right: 5%;
-        text-align: center; }
-      .protege__imgs .imags2 .img1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-      .protege__imgs .imags2 .img2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .protege__imgs .imags2 .img2 img {
-          margin-right: 30%; }
-      .protege__imgs .imags2 .img3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-    .protege__imgs .imags3 {
-      text-align: center; }
-      .protege__imgs .imags3 img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto; }
+  .protege .ico img {
+    width: 8em; }
+  .protege .ico1 img {
+    margin-top: 3em; }
+  .protege .ico1 .para {
+    margin-top: 1em; }
+  .protege .para {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: #1087c7;
+    font-weight: bold;
+    font-size: 20px; }
 
 .infor {
   background-color: #d0e5f0;
@@ -320,41 +271,29 @@ body {
       margin-left: auto;
       margin-right: auto; } }
 
+@media only screen and (max-width: 587px) {
+  .content1 .row {
+    display: flex;
+    flex-wrap: nowrap !important; } }
+
 @media only screen and (max-width: 987px) {
   .content3 button {
     width: 100%; } }
 
 @media only screen and (max-width: 987px) {
   .footer hr {
-    width: 100%; } }
+    width: 100%; }
+  .footer .row {
+    display: flex;
+    flex-wrap: nowrap !important; } }
 
 @media only screen and (max-width: 987px) {
-  .protege__imgs img {
+  .protege .ico img {
     width: 6em; }
-  .protege__imgs .imags1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .protege__imgs .imags1 .img1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .protege__imgs .imags1 .img1 span {
-        margin-top: 0em; }
-    .protege__imgs .imags1 .img2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-    .protege__imgs .imags1 .img3 {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-  .protege__imgs .imags2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
-    .protege__imgs .imags2 .img2 img {
-      margin-right: 0%; } }
+  .protege .ico1 img {
+    margin-top: 3em; }
+  .protege .ico1 .para {
+    margin-top: 0.5em; } }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
