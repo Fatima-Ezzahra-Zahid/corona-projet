@@ -5,9 +5,12 @@ const AIGUILLESEC = document.querySelector("#second");
 
 //Extraire l'heure actuel à l'aide de l'objet Date()
 
+var date=new Date();
 
 //Ajouter l'heure , minite , seconde  dans des varaiables
-
+var heur=date.getHours(); 
+var minite=date.getMinutes();
+var seconde=date.getSeconds();
 
 
 // Calculer de degré de mouvement de l'aiguille heure, de l'aiguille minute, de l'aiguille seconde
