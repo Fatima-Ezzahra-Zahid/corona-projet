@@ -49,6 +49,7 @@ gulp.task('watch', function(){
 
 gulp.task('useref', function(){
     return gulp.src('app/*.html')
+    
       .pipe(useref())
       // Minifies only if it's a JavaScript file
       .pipe(gulpIf('*.js', uglify()))
@@ -80,4 +81,4 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./dist/'));
 });
 //Build Prod
-exports.build = series('sass', 'images', 'useref');
+exports.build = series('sass', 'prefix','images', 'useref');
