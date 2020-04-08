@@ -1,30 +1,35 @@
-const AIGUILLEHR = document.querySelector("#hour");
-const AIGUILLEMIN = document.querySelector("#minute");
-const AIGUILLESEC = document.querySelector("#second");
+// Déclaration des elements DOM nécessaires :
+
+const AIGUILLE_DHEURE = document.querySelector("#hour");
+const AIGUILLE_DE_MINUTE = document.querySelector("#minute");
+const AIGUILLE_DE_SECONDE = document.querySelector("#second");
 
 
 function demarrerLaMontre() {
 
-  //Extraire l'heure actuel à l'aide de l'objet Date()
-    let date = new Date();
+    // Extraction de la date actuel à l'aide de la classe Date :
 
-    //Ajouter l'heure , minite , seconde  dans des varaiables
-    let seconde = (date.getSeconds())/60;
-    let munite = (date.getMinutes()+seconde)/60;
-    let heur = (date.getHours()+munite)/12;
+    let date_instance = new Date();
+
+    // Ajout de l'heure , le minute et la seconde dans des varaiables :
+
+    let seconds_number = (date_instance.getSeconds()) / 60;
+    let minutes_number = (date_instance.getMinutes() + seconds_number) / 60;
+    let hours_number = (date_instance.getHours() + minutes_number) / 12;
     
-    // Calculer de degré de mouvement de l'aiguille heure, de l'aiguille minute, de l'aiguille seconde 
-    let degres=seconde*360;
-    let degrem=munite*360;
-    let degreh=heur*360;
+    // Calcul des degrées de mouvement de l'aiguille d'heure, de l'aiguille de minute et de l'aiguille de seconde 
 
-    AIGUILLESEC.style.transform = `rotate(${degres}deg)`;
-    AIGUILLEMIN.style.transform = `rotate(${degrem}deg)`;
-    AIGUILLEHR.style.transform = `rotate(${degreh}deg)`;
+    let seconds_degree = seconds_number * 360;
+    let minutes_degree = minutes_number * 360;
+    let hours_degree = hours_number * 360;
 
-   
+    // Rotation des aiguilles à partir les degrées calculées :
 
-
+    AIGUILLE_DHEURE.style.transform = `rotate(${seconds_degree}deg)`;
+    AIGUILLE_DE_MINUTE.style.transform = `rotate(${minutes_degree}deg)`;
+    AIGUILLE_DE_SECONDE.style.transform = `rotate(${hours_degree}deg)`;
 }
-// Exercuter la fonction chaque second
-var interval = setInterval(demarrerLaMontre, 1000);
+
+// Execution de la fonction chaque une seconde
+
+const interval = setInterval(demarrerLaMontre, 1000);
