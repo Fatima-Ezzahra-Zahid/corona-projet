@@ -22,7 +22,7 @@ setTimeout("start("+duree+" -1)", 1000);
 }
 else
 {
-   alert("enter a valid to do");
+alert("enter a valid to do");
 o.innerHTML ="Au revoir";
 gPop.style.display="none";
 popup.style.visibility ="hidden";
@@ -94,7 +94,21 @@ onetime(gPop,'click',handler);
 
 //Eventlistner Add TODOS
 btn.addEventListener('click',e =>{
- 
+ e.preventDefault();
+ let nbr = sessionStorage.getItem('nbr') == null ? 5 : parseInt(sessionStorage.getItem('nbr'));
+   if (nbr == 5 || document.querySelector('.popup-content') == null) 
+   {
+      create();
+   }
+   if(addForm.add.value == "")
+   {
+		start(nbr);
+		popup.style.visibility = "visible";
+		sessionStorage.setItem('nbr', nbr + 5);
+	} else {
+		sessionStorage.removeItem('nbr');
+		generateTemp(addForm.add.value);
+	}
   
 });
 
@@ -104,6 +118,7 @@ btn.addEventListener('click',e =>{
 
 /*************Deleting  TO DO**************/
 list.addEventListener('click',e =>{
+   e.preventDefault();
 
 });
 
