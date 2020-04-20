@@ -118,16 +118,6 @@ btn.addEventListener('click',e =>{
 
 /*************Deleting  TO DO**************/
 
-// let todoItems = [];
-
-// function deleteTodo(key) {
-//    todoItems = todoItems.filter(item => item.id !== Number(key));
-//    const item = document.querySelector(`[data-key='${key}']`);
-//    item.remove();
-
-//    const liste = document.querySelector('.js-todo-list');
-//    if (todoItems.length === 0) liste.innerHTML = '';
-// }
 
 list.addEventListener('click',e =>{
    
