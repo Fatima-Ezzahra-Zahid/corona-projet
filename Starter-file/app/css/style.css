@@ -152,6 +152,8 @@ body {
     .content3 button:hover {
       background-color: #1087c7;
       color: white; }
+  .content3 a {
+    text-decoration: none !important; }
 
 .footer {
   padding: 20px; }
