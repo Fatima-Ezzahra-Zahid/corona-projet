@@ -92,18 +92,16 @@ function handler(e) {
 //Eventlistner Add TODOS
 btn.addEventListener('click', e => {
    e.preventDefault();
-   let nbr = sessionStorage.getItem('nbr') == null ? 5 : parseInt(sessionStorage.getItem('nbr'));
-   if (nbr == 5 || document.querySelector('.popup-content') == null) {
+   let nbr=3;
+   if (document.querySelector('.popup-content') == null) {
       create();
    }
    if (addForm.add.value == "") {
       start(nbr);
       popup.style.visibility = "visible";
-      sessionStorage.setItem('nbr', nbr + 5);
    } else {
-      sessionStorage.removeItem('nbr');
-      let addf = generateTemp(addForm.add.value);
-      localStorage.getItem(addf);
+       addf = generateTemp(addForm.add.value);
+      localStorage.getItem(addForm.add.value);
    }
 
 });
@@ -116,10 +114,11 @@ btn.addEventListener('click', e => {
 
 
 list.addEventListener('click', e => {
+const i=document.querySelector("i");
+const li=document.querySelector("li");
+   if (i.classList.contains('delete')) {
 
-   if (e.target.tagName === 'LI') {
-
-      e.target.remove();
+      li.remove();
    }
 
 });
