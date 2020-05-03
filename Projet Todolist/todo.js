@@ -114,12 +114,12 @@ btn.addEventListener('click', e => {
 
 
 list.addEventListener('click', e => {
-const i=document.querySelector("i");
-const li=document.querySelector("li");
-   if (i.classList.contains('delete')) {
+   if (e.target.tagName === 'I') {
 
-      li.remove();
+      e.target.parentElement.remove();
    }
+
+  
 
 });
 
