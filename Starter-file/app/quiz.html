@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+  <!--font awesome-->
+  <script src="https://kit.fontawesome.com/21508b4b05.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="image/1f637.png" type="image/x-icon">
+  <title>COVID-19</title>
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--endbuild-->
+
+</head>
+
+<body>
+
+
+  <section class="header">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" id="logo" href="index.html">LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="conseils.html">Consiels<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="index.html">Accuell</a>
+          <a class="nav-item nav-link" href="#"><img src="image/img1.png" class="imglogo"></a>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section class="steper">
+    <div class="card">
+      <div class="card-header">
+        <div class="steps">
+          <div class="step active">
+            <span>
+
+            </span>
+            <div class="text ac">Informations</div>
+          </div>
+          <div class="step">
+            <span>
+
+            </span>
+            <div class="text">Questionnaire</div>
+          </div>
+          <div class="step">
+            <span>
+
+            </span>
+            <div class="text">Résulats</div>
+          </div>
+        </div>
+      </div>
+      <div id="cardBody" class="card-body">
+        <div class="tabs">
+          <div id="first" class="tab">
+            <h5>Préambule</h5>
+            <p>L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer
+              à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de
+              Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à
+              disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas
+              garantis.</p>
+            <hr>
+            Cette application ne substitue pas votre médecin qui est plus apte à vous donner plus de précision.
+            Les informations de cette application est le premier niveau de la détection des cas possibles du COVID-19.
+          </div>
+          <div id="second" class="tab">
+            <div class="container">
+              <div class="col-sm-12">
+                <div class="mm-survey">
+
+                  <div class="mm-survey-progress">
+                    <div class="mm-survey-progress-bar mm-progress"></div>
+                  </div>
+
+                  <div class="mm-survey-results">
+                    <div class="mm-survey-results-container">
+                      <h3 class="mm-survey-results-score"></h3>
+                      <ul class="mm-survey-results-list"></ul>
+                    </div>
+                    <div class="mm-survey-results-controller">
+                      <div class="mm-back-btn">
+                        <button>Back</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mm-survey-bottom">
+                    <div class="mm-survey-container">
+
+                      <div class="mm-survey-page active" data-page="1">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="oui" name="oui"> 
+                            <label for="oui" class="btnQ"><i class="fas fa-check"></i><br />OUI </label>
+                            <input type="radio" id="non" name="oui"> 
+                            <label for="non" class="btnQ"><i class="fas fa-times"></i><br />NON</label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                     
+
+                      <div class="mm-survey-controller">
+                        <div class="mm-prev-btn">
+                          <button>Précédant</button>
+                        </div>
+                        <div class="mm-next-btn">
+                          <button disabled="true">Suivant</button>
+                        </div>
+                        <div class="mm-finish-btn">
+                          <button onclick="next(1)">Submit</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="third" class="tab">
+            <div class="container">
+              <div class="col-sm-12">
+                <div class="mm-survey">
+
+                  <div class="mm-survey-progress">
+                    <div class="mm-survey-progress-bar mm-progress"></div>
+                  </div>
+
+                  <div class="mm-survey-results">
+                    <div class="mm-survey-results-container">
+                      <h3 class="mm-survey-results-score"></h3>
+                      <ul class="mm-survey-results-list"></ul>
+                    </div>
+                    <div class="mm-survey-results-controller">
+                      <div class="mm-back-btn">
+                        <button>Back</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <button id="prevBtn" onclick="next(-1)">Prev</button>
+        <button id="nextBtn" onclick="next(1)">Démarrer le test</button>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="footer">
+    <div class="footer__logo">
+      LOGO
+    </div>
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+          <p class="titre">Contacts utiles</p>
+          <p class="para">Numéro économique - Allo veille épidémiologique</p>
+          <p class="num">080 100 47 47</p>
+          <p class="para">Aide médicale urgente - Allo SAMU</p>
+          <p class="num">141</p>
+          <p class="para">la plateforme téléphonique- Allo 300</p>
+          <p class="num">300</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  align-self-center menu" id="flex">
+          <a href="index.html">
+            <p class="ac">Accueil</p>
+          </a>
+          <hr size="9">
+          <a href="conseils.html">
+            <p class="cons">Conseils</p>
+          </a>
+          <hr size="9">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="back"></div>
+  <script src="../vendors/jquery.min.js"> </script>
+  <script src="../vendors/poper.js"></script>
+  <script src="../vendors/bootstrap.min.js"></script>
+
+  <!--build:js js/script.min.js-->
+  <script src="js/script.js"></script>
+  <script src="js/quiz.js"></script>
+  <!--endbuild-->
+
+</body>
+
+</html>
