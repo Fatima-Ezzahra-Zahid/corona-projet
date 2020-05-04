@@ -58,7 +58,13 @@ const generateTemp = todo => {
             </li>
    `;
    list.innerHTML += html;
+   localStorage["list"] = list.innerHTML
 };
+
+
+ if (localStorage["list"]) {
+   list.innerHTML = localStorage["list"];
+ }
 
 
 /* function pour controller l'evenement et pour ne pas etre repeté à chaque clique */
@@ -100,8 +106,8 @@ btn.addEventListener('click', e => {
       start(nbr);
       popup.style.visibility = "visible";
    } else {
-       addf = generateTemp(addForm.add.value);
-      localStorage.getItem(addForm.add.value);
+       generateTemp(addForm.add.value);
+      
    }
 
 });
@@ -117,7 +123,9 @@ list.addEventListener('click', e => {
    if (e.target.tagName === 'I') {
 
       e.target.parentElement.remove();
+      localStorage["list"] = list.innerHTML ;
    }
+  
 
   
 
