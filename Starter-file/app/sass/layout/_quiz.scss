@@ -1,6 +1,5 @@
 .mm-survey {
-	// margin-top: 75px;
-	// margin-bottom: 50px;
+	width:60em;
 }
 
 .mm-survey-container {
@@ -197,6 +196,8 @@ input[type=radio] + label {
     color: $color_step;
     font-weight: bold;
     font-size: 1em;
+    width:7em;
+    border-radius:6px;
   } 
 
 
@@ -233,5 +234,10 @@ input[type=radio]:checked + label {
     border:0.5px solid $color_back;
     
      
+   
+}
+.imoji
+{
+   font-size:2em;
    
 }

@@ -339,6 +339,9 @@ body {
   .card-footer button {
     width: 100%; } }
 
+.mm-survey {
+  width: 60em; }
+
 .mm-survey-container {
   border: 1px solid #dfdfdf;
   background: #fafafa;
@@ -478,7 +481,9 @@ input[type=radio] + label {
   text-align: center;
   color: #1078ad;
   font-weight: bold;
-  font-size: 1em; }
+  font-size: 1em;
+  width: 7em;
+  border-radius: 6px; }
 
 input[type=radio]:checked + label {
   background-color: #1078ad;
@@ -503,6 +508,9 @@ input[type=radio]:checked + label {
   width: 35em;
   padding: 0.22em;
   border: 0.5px solid #1078ad; }
+
+.imoji {
+  font-size: 2em; }
 
 @media only screen and (max-width: 987px) {
   .pensez {
@@ -555,6 +563,10 @@ input[type=radio]:checked + label {
     margin-top: 3em; }
   .protege .ico1 .para {
     margin-top: 0.5em; } }
+
+@media only screen and (max-width: 987px) {
+  .mm-survey {
+    width: 25em; } }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
