@@ -58,7 +58,13 @@ const generateTemp = todo => {
             </li>
    `;
    list.innerHTML += html;
+   localStorage["list"] = list.innerHTML
 };
+
+
+ if (localStorage["list"]) {
+   list.innerHTML = localStorage["list"];
+ }
 
 
 /* function pour controller l'evenement et pour ne pas etre repeté à chaque clique */
@@ -100,8 +106,8 @@ btn.addEventListener('click', e => {
       start(nbr);
       popup.style.visibility = "visible";
    } else {
-       addf = generateTemp(addForm.add.value);
-      localStorage.getItem(addForm.add.value);
+       generateTemp(addForm.add.value);
+      
    }
 
 });
@@ -114,12 +120,14 @@ btn.addEventListener('click', e => {
 
 
 list.addEventListener('click', e => {
-const i=document.querySelector("i");
-const li=document.querySelector("li");
-   if (i.classList.contains('delete')) {
+   if (e.target.tagName === 'I') {
 
-      li.remove();
+      e.target.parentElement.remove();
+      localStorage["list"] = list.innerHTML ;
    }
+  
+
+  
 
 });
 
