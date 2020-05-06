@@ -75,14 +75,16 @@
             Les informations de cette application est le premier niveau de la détection des cas possibles du COVID-19.
           </div>
           <div id="second" class="tab">
+            
             <div class="container">
               <div class="col-sm-12">
                 <div class="mm-survey">
-
+                 <div class="progre">
                   <div class="mm-survey-progress">
                     <div class="mm-survey-progress-bar mm-progress"></div>
                   </div>
-
+                 </div>
+                  
                   <div class="mm-survey-bottom">
                     <div class="mm-survey-container">
 
@@ -427,10 +429,6 @@
               <div class="col-sm-12">
                 <div class="mm-survey">
 
-                  <div class="mm-survey-progress">
-                    <div class="mm-survey-progress-bar mm-progress"></div>
-                  </div>
-
                   <div class="mm-survey-results">
                     <div class="mm-survey-results-container">
                       <h3 class="mm-survey-results-score"></h3>
@@ -438,7 +436,7 @@
                     </div>
                     <div class="mm-survey-results-controller">
                       <div class="mm-back-btn">
-                        <button>Back</button>
+                        <button onclick="next(-2);history.go(0);">Démarrer le test</button>
                       </div>
                     </div>
                   </div>
@@ -446,12 +444,8 @@
               </div>
             </div>
 
-
-
-
-
-
           </div>
+          
         </div>
       </div>
       <div class="card-footer">
