@@ -130,8 +130,64 @@
 
 
 @media only screen and (max-width: 987px) {
-    .mm-survey {
-	width:25em;
+    .container
+    {
+        .mm-survey {
+            width:22em;
+        }
+        .mm-survey-container {
+            border: 1px solid $colo-border;
+            // min-height: 600px;
+            background: #fafafa;
+            padding: 1em;
+        }
+        .lab {
+            width: 3em;
+            
+    
+    
+        }
+    
+        .degre {
+            width: 10em;
+    
+        }
+        .mm-survey-question {
+    
+            p {
+                font-size: 1em;
+              
+            }
+        }
+        input[type=radio]+label {
+            padding: 0.75em 2em  0.75em;
+            font-size:  0.5em;
+            
+        }
+    }
+   
+
 }
+
+@media only screen and (max-width: 987px) {
+    .error
+    {
+        .img img
+        {
+            width: 100%;
+        }
+        h1
+        {
+            font-size: 25px;
+        }
+        button
+        {
+            padding: 0.75em;
+            width: 12em;
+            font-size: 16px;
+          
+           
+        }
+    }
 
 }
