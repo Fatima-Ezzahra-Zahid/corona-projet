@@ -76,8 +76,7 @@
 
     .mm-survey-controller {
         button {
-            background-image: url(../image/bar-17.png);
-            background-position: center;
+            background-color: $color_nav;
             padding: 0.25em;
             margin-top: 3%;
             border: 2px solid $color_titre;
@@ -100,7 +99,7 @@
     .mm-survey-progress {
         width: 100%;
         height: 10px;
-        background: #f5f5f5;
+        background: $color_ciel;
         overflow: hidden;
         border-radius: 12px;
     }
@@ -255,7 +254,34 @@
         border-bottom: none;
         border-radius: 8px 8px 0px 0px;
         background: #fafafa;
+        // display: inline;
+        #questCount
+        {
+            font-weight: bold;
+        }
     }
+
+    .design
+    {
+        padding: 4em;
+        background-color: $color-infor;
+        h5
+        {
+            text-align: center;
+            color:$color_step;
+            font-weight: bold;
+            padding-bottom: 1em;
+        }
+        p
+        {
+            text-align: center;
+        }
+        .res p
+        {
+            color:$color_logo;
+        }
+    }
+   
 }
 
 @keyframes next {
@@ -286,4 +312,6 @@
     100% {
         transform: translateX(0);
     }
+
+    
 }
