@@ -275,11 +275,9 @@
         p
         {
             text-align: center;
+        
         }
-        .res p
-        {
-            color:$color_logo;
-        }
+       
     }
    
 }
@@ -298,6 +296,7 @@
         transform: translateX(0);
     }
 }
+
 
 @keyframes previous {
     0% {
