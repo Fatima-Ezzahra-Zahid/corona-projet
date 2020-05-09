@@ -1,0 +1,38 @@
+.error
+{
+    padding: 3em;
+    .img img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        height: auto;
+    }
+    h1
+    {
+        text-align: center;
+        color:$color_titre;
+        padding: 2em;
+        font-weight: bold;
+    }
+    button
+    {
+        color:$color_white ;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.75em;
+        width: 15em;
+        border: none;
+        background-image: url(../image/En.png);
+        background-position: center;
+        font-size: 18px;
+        font-weight: bold;
+       
+    }
+    a
+    {
+        text-decoration: none !important;
+    }
+}
