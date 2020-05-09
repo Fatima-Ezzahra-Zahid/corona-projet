@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/21508b4b05.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="image/1f637.png" type="image/x-icon">
+  <title>COVID-19</title>
+  <link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+
+  <section class="header">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" id="logo" href="index.html">LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="conseils.html">Consiels<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="index.html">Accuell</a>
+          <a class="nav-item nav-link" href="#"><img src="image/img1.png" class="imglogo"></a>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section class="steper">
+    <div class="card">
+      <div class="card-header">
+        <div class="steps">
+          <div class="step active">
+            <span>
+
+            </span>
+            <div class="text ac">Informations</div>
+          </div>
+          <div class="step">
+            <span>
+
+            </span>
+            <div class="text">Questionnaire</div>
+          </div>
+          <div class="step">
+            <span>
+
+            </span>
+            <div class="text">Résulats</div>
+          </div>
+        </div>
+      </div>
+      <div id="cardBody" class="card-body">
+        <div class="tabs">
+          <div id="first" class="tab">
+            <h5>Préambule</h5>
+            <p>L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer
+              à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de
+              Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à
+              disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas
+              garantis.</p>
+            <hr>
+            Cette application ne substitue pas votre médecin qui est plus apte à vous donner plus de précision.
+            Les informations de cette application est le premier niveau de la détection des cas possibles du COVID-19.
+          </div>
+          <div id="second" class="tab">
+            
+            <div class="container">
+              <div class="col-sm-12">
+                <div class="mm-survey">
+                 <div class="progre">
+                  <p id="questCount"></p>
+                  <div class="mm-survey-progress"> 
+                    <div class="mm-survey-progress-bar mm-progress"></div>
+                  </div>
+                 </div>
+                  
+                  <div class="mm-survey-bottom">
+                    <div class="mm-survey-container">
+
+                      <div class="mm-survey-page active" data-page="1">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="oui" name="Q1" value="Oui" > 
+                            <label for="oui" class="btnQ"><i class="fas fa-check"></i><br />Oui </label>
+                            <input type="radio" id="non" name="Q1" value="Non"> 
+                            <label for="non" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="2">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Quelle est votre température corporelle ?</p>
+                          </div>
+                          <div class="mm-survey-item">
+                              <input  type="number" placeholder="34-42 " name="Q2" max=42 min=34  class="degre">
+                              <label class="lab">degrés</label>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="mm-survey-page " data-page="3">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="ouii" name="Q3" value="Oui"> 
+                            <label for="ouii" class="btnQ"><i class="fas fa-check"></i><br />Oui </label>
+                            <input type="radio" id="nonn" name="Q3" value="Non"> 
+                            <label for="nonn" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="4">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Avez-vous eu des courbatures inhabituelles au cours des derniers jours ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="ouiii" name="Q4" value="Oui"> 
+                            <label for="ouiii" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="nonnn" name="Q4" value="Non"> 
+                            <label for="nonnn" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="5">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Ces derniers jours, avez-vous un mal de gorge ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="ouiiii" name="Q5" value="Oui"> 
+                            <label for="ouiiii" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="nonnnn" name="Q5" value="Non"> 
+                            <label for="nonnnn" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="mm-survey-page " data-page="6">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Ces dernières 24 heures, avez-vous de la diarrhée ? Avec au moins 3 selles molles.</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="ouiiiii" name="Q6" value="Oui"> 
+                            <label for="ouiiiii" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="nonnnnn" name="Q6" value="Non"> 
+                            <label for="nonnnnn" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="mm-survey-page " data-page="7">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Ces derniers jours, avez-vous une fatigue inhabituelle qui vous a obligé à vous reposer plus de la moitié de la journée ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="ouiiiiii" name="Q7" value="Oui"> 
+                            <label for="ouiiiiii" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="nonnnnnn" name="Q7" value="Non"> 
+                            <label for="nonnnnnn" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="8">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="8" name="Q8" value="Oui"> 
+                            <label for="8" class="btnQ"><i class="fas fa-check"></i><br />Oui </label>
+                            <input type="radio" id="88" name="Q8" value="Non"> 
+                            <label for="88" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="9">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Dans les dernières 24 heures, avez-vous noté un manque de souffle inhabituel lorsque vous parlez ou faites un petit effort ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="9" name="Q9" value="Oui"> 
+                            <label for="9" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="99" name="Q9" value="Non"> 
+                            <label for="99" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="10">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Actuellement, comment vous vous sentez ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="bien" name="Q10" value="Bien"> 
+                            <label for="bien" class="btnQ"><i class="far fa-laugh imoji"></i><br />Bien</label>
+                            <input type="radio" id="Assez" name="Q10" value="Assez bien"> 
+                            <label for="Assez" class="btnQ"><i class="far fa-smile-beam imoji"></i><br />Assez bien</label>
+                            <input type="radio" id="Fatigué" name="Q10" value="Fatigué(e)"> 
+                            <label for="Fatigué" class="btnQ"><i class="far fa-frown imoji"></i><br />Fatigué(e)</label>
+                            <input type="radio" id="Très" name="Q10" value="Très fatigué(e)"> 
+                            <label for="Très" class="btnQ"><i class="far fa-dizzy imoji"></i><br />Très fatigué(e)</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="mm-survey-page " data-page="11">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Quel est votre âge ? Ceci, afin de calculer un facteur de risque spécifique.</p>
+                          </div>
+                          <div class="mm-survey-item">
+                              <input  type="number" placeholder="15-110 " max=110 min=15  class="degre" name="Q11">
+                              <label class="lab">ans</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="12">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Quel est votre poids ? Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.</p>
+                          </div>
+                          <div class="mm-survey-item">
+                              <input  type="number" placeholder="20-250 " max=250 min=20  class="degre" name="Q12">
+                              <label class="lab">kg</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="13">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Quelle est votre taille ? Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.</p>
+                          </div>
+                          <div class="mm-survey-item">
+                              <input  type="number" placeholder="80-250 " max=250 min=80 class="degre" name="Q13">
+                              <label class="lab">cm</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="mm-survey-page " data-page="14">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Avez-vous de l’hypertension artérielle mal équilibrée ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="14o" name="Q14" value="Oui"> 
+                            <label for="14o" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="14n" name="Q14" value="Non"> 
+                            <label for="14n" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                        <div class="mm-survey-page " data-page="15">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Êtes-vous diabétique ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="15o" name="Q15" value="Oui"> 
+                            <label for="15o" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="15n" name="Q15" value="Non"> 
+                            <label for="15n" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+                          <div class="mm-survey-page " data-page="16">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Avez-vous ou avez-vous eu un cancer ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="16o" name="Q16" value="Oui"> 
+                            <label for="16o" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="16n" name="Q16" value="Non"> 
+                            <label for="16n" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+                        <div class="mm-survey-page " data-page="17">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="17o" name="Q17" value="Oui"> 
+                            <label for="17o" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="17n" name="Q17" value="Non"> 
+                            <label for="17n" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="mm-survey-page " data-page="18">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Avez-vous une insuffisance rénale chronique dialysée ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="18o" name="Q18" value="Oui"> 
+                            <label for="18o" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="18n" name="Q18" value="Non"> 
+                            <label for="18n" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="19">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Avez-vous une maladie chronique du foie ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="19o" name="Q19" value="Oui"> 
+                            <label for="19o" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="19n" name="Q19" value="Non"> 
+                            <label for="19n" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="20">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Êtes-vous enceinte ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="20o" name="Q20" value="Oui"> 
+                            <label for="20o" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="20n" name="Q20" value="Non"> 
+                            <label for="20n" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                            <input type="radio" id="20h" name="Q20" value="Homme"> 
+                            <label for="20h" class="btnQ"><i class="fas fa-male"></i><br />Homme</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mm-survey-page " data-page="21">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="21o" name="Q21" value="Oui"> 
+                            <label for="21o" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="21n" name="Q21" value="Non"> 
+                            <label for="21n" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="mm-survey-page " data-page="22">
+                        <div class="mm-survery-content">
+                          <div class="mm-survey-question">
+                            <p>Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive).</p>
+                          </div>
+                          <div class="mm-survey-item fx">
+                            <input type="radio" id="22o" name="Q22" value="Oui"> 
+                            <label for="22o" class="btnQ"><i class="fas fa-check"></i><br />Oui</label>
+                            <input type="radio" id="22n" name="Q22" value="Non"> 
+                            <label for="22n" class="btnQ"><i class="fas fa-times"></i><br />Non</label>
+                          </div>
+                        </div>
+                      </div>
+                         
+                      <div class="mm-survey-controller">
+                        <div class="mm-prev-btn" class="previous">
+                          <button>Précédant</button>
+                        </div>
+                        <div class="mm-next-btn">
+                          <button disabled="true" class="next">Suivant</button>
+                        </div>
+                        <div class="mm-finish-btn">
+                          <button onclick="next(1)">terminé le test</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div id="third" class="tab">
+            <div class="container">
+              <div class="col-sm-12">
+                <div class="mm-survey">
+
+                  <div class="mm-survey-results">
+                    <div class="design">
+                      <h5>Résulats</h5>
+                      <p></p>
+                      <hr>
+                      <p style="color: #308ab7;"></p>
+                    </div>
+                    
+                    <div class="mm-survey-results-controller">
+                      <div class="mm-back-btn">
+                        <button onclick="next(-2);history.go(0);">Démarrer le test</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="card-footer">
+        <button id="prevBtn" onclick="next(-1)">Prev</button>
+        <button id="nextBtn" onclick="next(1)">Démarrer le test</button>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="footer">
+    <div class="footer__logo">
+      LOGO
+    </div>
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+          <p class="titre">Contacts utiles</p>
+          <p class="para">Numéro économique - Allo veille épidémiologique</p>
+          <p class="num">080 100 47 47</p>
+          <p class="para">Aide médicale urgente - Allo SAMU</p>
+          <p class="num">141</p>
+          <p class="para">la plateforme téléphonique- Allo 300</p>
+          <p class="num">300</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  align-self-center menu" id="flex">
+          <a href="index.html">
+            <p class="ac">Accueil</p>
+          </a>
+          <hr size="9">
+          <a href="conseils.html">
+            <p class="cons">Conseils</p>
+          </a>
+          <hr size="9">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="back"></div>
+  <script src="../vendors/jquery.min.js"> </script>
+  <script src="../vendors/poper.js"></script>
+  <script src="../vendors/bootstrap.min.js"></script>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
