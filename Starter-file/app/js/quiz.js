@@ -275,11 +275,11 @@ function Results() {
 
 	// if(checked[0]==="Oui"&&checked[1]==="Oui"&&val[0]>37)
 	// {
-	// 	resultMessage[0].innerText="oui";
+	// 	resMsg[0].innerText="oui";
 	// }
 	// else
 	// {
-	// 	resultMessage[0].innerText="Non"
+	// 	resMsg[0].innerText="Non"
 	// }
 	if (((checked[0] === 'Oui' || checked[1] === 'Oui') && (checked[3] === 'Oui' || checked[1] === 'Oui') && (checked[2] === 'Oui' || checked[0] === 'Oui') && checked[4] === 'Oui') && (checked[9] === 'Non' && checked[10] === 'Non' && checked[11] === 'Non' && checked[12] === 'Non' && checked[13] === 'Non' && checked[14] === 'Non' && (checked[15] === 'Non' || checked[15] === 'Homme') && checked[16] === 'Non' && checked[17] === 'Non' && val[1] < 50)) {
 
@@ -342,7 +342,7 @@ function Results() {
 		resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
 			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
 			resMsg[0].style.color = '#FF0000'
-			resMsg[0].style.fontSize = '48px'
+			resMsg[0].style.fontSize = '35px'
 			resMsg[0].style.fontWeight = 'bold'
 
 	}
@@ -393,7 +393,7 @@ function Results() {
 		resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
 			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
 			resMsg[0].style.color = '#FF0000'
-			resMsg[0].style.fontSize = '48px'
+			resMsg[0].style.fontSize = '35px'
 			resMsg[0].style.fontWeight = 'bold'
 	}
 
