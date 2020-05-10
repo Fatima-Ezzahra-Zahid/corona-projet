@@ -416,18 +416,18 @@ function Results() {
 			resMsg[0].style.fontSize = '35px'
 			resMsg[0].style.fontWeight = 'bold'
 	}
-	else
-	{
-		resMsg[0].innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
-		'N’hésitez pas à contacter votre médecin en cas de doute.' + 'Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.' + 'Pour toute information concernant le Covid-19 allez vers la page d’accueil.'
-		resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
-		'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
-		resMsg[0].style.fontWeight = 'bold'
-		resMsg[0].style.fontWeight = 'bold'
-		resMsg[0].style.color = '#369D53'
-		resMsg[0].style.fontSize = '35px'
+	// else
+	// {
+	// 	resMsg[0].innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
+	// 	'N’hésitez pas à contacter votre médecin en cas de doute.' + 'Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.' + 'Pour toute information concernant le Covid-19 allez vers la page d’accueil.'
+	// 	resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
+	// 	'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
+	// 	resMsg[0].style.fontWeight = 'bold'
+	// 	resMsg[0].style.fontWeight = 'bold'
+	// 	resMsg[0].style.color = '#369D53'
+	// 	resMsg[0].style.fontSize = '35px'
 
-	}
+	// }
 
 
 	if ((checked[0] === 'Oui' || checked[1] === 'Oui' || checked[3] === 'Oui' || checked[2] === 'Oui') && (checked[5] === 'Non' && checked[6] === 'Non' && checked[12] === 'Non' && checked[8] === 'Assez bien' || checked[8] === 'Bien')) {
