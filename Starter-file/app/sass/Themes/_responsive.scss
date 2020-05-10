@@ -173,33 +173,10 @@
         .mm-back-btn {
 
             & button {
-                background-image: url(../image/bar-17.png);
-                background-position: center;
-                padding: 15px;
-                margin-top: 3%;
-                border: 2px solid $color_titre;
-                border-radius: 12px;
-                color: $color_titre;
-                font-size: 20px;
-                font-weight: bold;
-                width: 10em;
-                padding: 0.5em;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            
-                &:hover {
-                    background-color: $color_titre;
-                    color: $color_white;
-            
-                }
-    
-                &:active {
-                    outline: none;
-                    transform: translate(0px, 5px);
-                    -webkit-transform: translate(0px, 5px);
-                    box-shadow: 0px 1px 0px 0px;
-                }
+                padding: 20px;
+                font-size: 15px;
+                width: 13em;
+                
             }
     
         }

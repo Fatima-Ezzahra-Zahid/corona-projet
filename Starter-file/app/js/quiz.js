@@ -290,6 +290,7 @@ function Results() {
 			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
 			resMsg[0].style.fontWeight = 'bold'
 			resMsg[0].style.color = '#369D53'
+			resMsg[0].style.fontSize = '35px'
 	}
 
 
@@ -304,11 +305,12 @@ function Results() {
 			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
 			resMsg[0].style.fontWeight = 'bold'
 			resMsg[0].style.color = '#369D53'
+			resMsg[0].style.fontSize = '35px'
 	}
 
 
 
-	if (((checked[0] === 'Oui' || checked[1] === 'Oui') && (checked[3] === 'Oui' || checked[1] === 'Oui') && (checked[2] === 'Oui' || checked[0] === 'Oui') && checked[4] === 'Oui') && ((checked[9] === 'Oui' || checked[10] === 'Oui' || checked[11] === 'Oui' || checked[12] === 'Oui' || checked[13] === 'Oui' || checked[14] === 'Oui' || checked[15] === 'Oui' || checked[16] === 'Oui' || checked[17] === 'Oui') && (checked[5] === 'Non' && checked[6] === 'Non' && checked[12] === 'Non' && checked[8] === 'Assez bien' && checked[8] === 'Bien'))) {
+	if (((checked[0] === 'Oui' || checked[1] === 'Oui') && (checked[3] === 'Oui' || checked[1] === 'Oui') && (checked[2] === 'Oui' || checked[0] === 'Oui') && checked[4] === 'Oui') && ((checked[9] === 'Oui' || checked[10] === 'Oui' || checked[11] === 'Oui' || checked[12] === 'Oui' || checked[13] === 'Oui' || checked[14] === 'Oui' || checked[15] === 'Oui' || checked[16] === 'Oui' || checked[17] === 'Oui') && (checked[5] === 'Non' && checked[6] === 'Non' && checked[12] === 'Non' && checked[8] === 'Assez bien' || checked[8] === 'Bien'))) {
 
 		resMsg[0].innerText = "Vous pouvez faire une téléconsultation ou médecin généraliste ou visite à domi" +
 			"cile. Appelez le 141 si une gêne respiratoire ou des difficultés importantes p" +
@@ -317,6 +319,7 @@ function Results() {
 			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
 			resMsg[0].style.fontWeight = 'bold'
 			resMsg[0].style.color = '#369D53'
+			resMsg[0].style.fontSize = '35px'
 	}
 
 
@@ -330,6 +333,7 @@ function Results() {
 			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
 			resMsg[0].style.fontWeight = 'bold'
 			resMsg[0].style.color = '#369D53'
+			resMsg[0].style.fontSize = '35px'
 	}
 
 
@@ -347,9 +351,22 @@ function Results() {
 
 	}
 
+	if (((checked[0] === 'Oui' || checked[1] === 'Oui'||checked[2] === 'Oui' || checked[3] === 'Oui'|| checked[4] === 'Oui'||checked[5] === 'Oui' || checked[6] === 'Oui')  && (val[0] <= 39) && ((val[0] <= 39 && checked[8] === 'Fatigué(e)') || (val[0] <= 39 && checked[8] === 'Très fatigué') )))
+	{
 
+		
+		resMsg[0].innerText = "Vous pouvez faire une téléconsultation ou médecin généraliste ou visite à domi" +
+			"cile. Appelez le 141 si une gêne respiratoire ou des difficultés importantes p" +
+			"our s’alimenter ou boire pendant plus de 24h apparaissent."
+			resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
+			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
+			resMsg[0].style.fontWeight = 'bold'
+			resMsg[0].style.color = '#369D53'
+			resMsg[0].style.fontSize = '35px'
 
-	if (((checked[0] === 'Oui' && checked[1] === 'Oui') && (checked[9] === 'Non' && checked[10] === 'Non' && checked[11] === 'Non' && checked[12] === 'Non' && checked[13] === 'Non' && checked[14] === 'Non' && (checked[15] === 'Non' || checked[15] === 'Homme') && checked[16] === 'Non' && checked[17] === 'Non')) && (checked[5] === 'Non' && checked[6] === 'Non' && checked[12] === 'Non' && checked[8] === 'Assez bien' && checked[8] === 'Bien') || ((val[0] >= 39 || checked['Q7'] === 'Oui' || checked['Q10'] === 'Très fatigué' || checked['Q10'] === 'Fatigué(e)') && val['Q2'] <= 35, 4 && checked['Q17'] === 'Non' && checked['Q8'] === 'Non')) {
+	}
+
+	if (((checked[0] === 'Oui' && checked[1] === 'Oui') && (checked[9] === 'Non' && checked[10] === 'Non' && checked[11] === 'Non' && checked[12] === 'Non' && checked[13] === 'Non' && checked[14] === 'Non' && (checked[15] === 'Non' || checked[15] === 'Homme') && checked[16] === 'Non' && checked[17] === 'Non')) && (checked[5] === 'Non' && checked[6] === 'Non' && checked[12] === 'Non' && checked[8] === 'Assez bien' || checked[8] === 'Bien') || ((val[0] >= 39 || checked['Q7'] === 'Oui' || checked['Q10'] === 'Très fatigué' || checked['Q10'] === 'Fatigué(e)') && val['Q2'] <= 35, 4 && checked['Q17'] === 'Non' && checked['Q8'] === 'Non')) {
 
 		resMsg[0].innerText = "Vous pouvez faire une téléconsultation ou médecin généraliste ou visite à domi" +
 			"cile. Appelez le 141 si une gêne respiratoire ou des difficultés importantes p" +
@@ -358,10 +375,11 @@ function Results() {
 			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
 			resMsg[0].style.fontWeight = 'bold'
 			resMsg[0].style.color = '#369D53'
+			resMsg[0].style.fontSize = '35px'
 	}
 
 
-	if ((checked[0] === 'Oui' && checked[1] === 'Oui') && (checked[9] === 'Oui' || checked[10] === 'Oui' || checked[11] === 'Oui' || checked[12] === 'Oui' || checked[13] === 'Oui' || checked[14] === 'Oui' || checked[15] === 'Oui' || checked[16] === 'Oui' || checked[17] === 'Oui') && checked[5] === 'Non' && checked[6] === 'Non' && checked[12] === 'Non' && checked[8] === 'Assez bien' && checked[8] === 'Bien') {
+	if ((checked[0] === 'Oui' && checked[1] === 'Oui') && (checked[9] === 'Oui' || checked[10] === 'Oui' || checked[11] === 'Oui' || checked[12] === 'Oui' || checked[13] === 'Oui' || checked[14] === 'Oui' || checked[15] === 'Oui' || checked[16] === 'Oui' || checked[17] === 'Oui') && checked[5] === 'Non' && checked[6] === 'Non' && checked[12] === 'Non' && checked[8] === 'Assez bien' || checked[8] === 'Bien') {
 
 		resMsg[0].innerText = "Vous pouvez faire une téléconsultation ou médecin généraliste ou visite à domi" +
 			"cile. Appelez le 141 si une gêne respiratoire ou des difficultés importantes p" +
@@ -370,6 +388,7 @@ function Results() {
 			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
 			resMsg[0].style.fontWeight = 'bold'
 			resMsg[0].style.color = '#369D53'
+			resMsg[0].style.fontSize = '35px'
 
 	}
 
@@ -383,6 +402,7 @@ function Results() {
 			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
 			resMsg[0].style.fontWeight = 'bold'
 			resMsg[0].style.color = '#369D53'
+			resMsg[0].style.fontSize = '35px'
 	}
 
 
@@ -396,9 +416,21 @@ function Results() {
 			resMsg[0].style.fontSize = '35px'
 			resMsg[0].style.fontWeight = 'bold'
 	}
+	else
+	{
+		resMsg[0].innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
+		'N’hésitez pas à contacter votre médecin en cas de doute.' + 'Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.' + 'Pour toute information concernant le Covid-19 allez vers la page d’accueil.'
+		resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
+		'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
+		resMsg[0].style.fontWeight = 'bold'
+		resMsg[0].style.fontWeight = 'bold'
+		resMsg[0].style.color = '#369D53'
+		resMsg[0].style.fontSize = '35px'
+
+	}
 
 
-	if ((checked[0] === 'Oui' || checked[1] === 'Oui' || checked[3] === 'Oui' || checked[2] === 'Oui') && (checked[5] === 'Non' && checked[6] === 'Non' && checked[12] === 'Non' && checked[8] === 'Assez bien' && checked[8] === 'Bien')) {
+	if ((checked[0] === 'Oui' || checked[1] === 'Oui' || checked[3] === 'Oui' || checked[2] === 'Oui') && (checked[5] === 'Non' && checked[6] === 'Non' && checked[12] === 'Non' && checked[8] === 'Assez bien' || checked[8] === 'Bien')) {
 
 		resMsg[0].innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
 			'Consultez votre médecin au moindre doute.'
@@ -412,30 +444,30 @@ function Results() {
 
 
 
-	if ((checked[0] === 'Oui' || checked[1] === 'Oui' || checked[3] === 'Oui' || checked[2] === 'Oui') && ((checked[9] === 'Oui' || checked[10] === 'Oui' || checked[11] === 'Oui' || checked[12] === 'Oui' || checked[13] === 'Oui' || checked[14] === 'Oui' || checked[15] === 'Oui' || checked[16] === 'Oui' || checked[17] === 'Oui') || (checked[5] === 'oui' && checked[6] === 'oui' && checked[12] === 'oui' && checked[8] === 'Très fatigué' && checked[8] === 'Fatigué(e)'))) {
+	// if ((checked[0] === 'Oui' || checked[1] === 'Oui' || checked[3] === 'Oui' || checked[2] === 'Oui') && ((checked[9] === 'Oui' || checked[10] === 'Oui' || checked[11] === 'Oui' || checked[12] === 'Oui' || checked[13] === 'Oui' || checked[14] === 'Oui' || checked[15] === 'Oui' || checked[16] === 'Oui' || checked[17] === 'Oui') || (checked[5] === 'oui' && checked[6] === 'oui' && checked[12] === 'oui' && checked[8] === 'Très fatigué' && checked[8] === 'Fatigué(e)'))) {
 
-		resMsg[0].innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
-			'Un avis médical est recommandé. Au moindre doute, appelez le 141.'
-			resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
-			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
-			resMsg[0].style.fontWeight = 'bold'
-			resMsg[0].style.fontWeight = 'bold'
-			resMsg[0].style.color = '#369D53'
-	}
-
-
-	if ((checked[0] === 'Non') && (checked[1] === 'Non') && (checked[2] === 'Non') && (checked[3] === 'Non') && (checked[4] === 'Non')) {
-
-		resMsg[0].innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
-			'N’hésitez pas à contacter votre médecin en cas de doute.' + 'Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.' + 'Pour toute information concernant le Covid-19 allez vers la page d’accueil.'
-			resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
-			'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
-			resMsg[0].style.fontWeight = 'bold'
-			resMsg[0].style.fontWeight = 'bold'
-			resMsg[0].style.color = '#369D53'
+	// 	resMsg[0].innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
+	// 		'Un avis médical est recommandé. Au moindre doute, appelez le 141.'
+	// 		resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
+	// 		'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
+	// 		resMsg[0].style.fontWeight = 'bold'
+	// 		resMsg[0].style.fontWeight = 'bold'
+	// 		resMsg[0].style.color = '#369D53'
+	// }
 
 
-	}
+	// if ((checked[0] === 'Non') && (checked[1] === 'Non') && (checked[2] === 'Non') && (checked[3] === 'Non') && (checked[4] === 'Non')) {
+
+	// 	resMsg[0].innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
+	// 		'N’hésitez pas à contacter votre médecin en cas de doute.' + 'Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.' + 'Pour toute information concernant le Covid-19 allez vers la page d’accueil.'
+	// 		resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
+	// 		'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
+	// 		resMsg[0].style.fontWeight = 'bold'
+	// 		resMsg[0].style.fontWeight = 'bold'
+	// 		resMsg[0].style.color = '#369D53'
+
+
+	// }
 }
 
 function submitData() {
