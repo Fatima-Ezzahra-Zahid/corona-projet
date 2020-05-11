@@ -404,6 +404,16 @@ function Results() {
 			resMsg[0].style.color = '#369D53'
 			resMsg[0].style.fontSize = '35px'
 	}
+	else
+	{
+		resMsg[0].innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
+		'Consultez votre médecin au moindre doute.'
+		resMsg[1].innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
+		'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
+		resMsg[0].style.fontWeight = 'bold'
+		resMsg[0].style.fontWeight = 'bold'
+		resMsg[0].style.color = '#369D53'
+	}
 
 
 
